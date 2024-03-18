@@ -1,0 +1,17 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "appautoscaling",
+            "Effect": "Allow",
+            "Action": [
+                "application-autoscaling:DescribeScalingPolicies",
+                "application-autoscaling:DescribeScalingActivities",
+                "iam:CreateServiceLinkedRole"
+            ],
+            "Resource": [
+                "*"
+            ]
+        }
+    ]
+  }

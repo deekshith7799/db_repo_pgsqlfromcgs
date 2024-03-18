@@ -1,0 +1,49 @@
+{  
+    "instance_parameter_group": [
+      {
+        "apply_method": "pending-reboot",
+        "name": "log_min_duration_statement",
+        "value": "1200000"
+      },
+      {
+        "apply_method": "pending-reboot",
+        "name": "log_disconnections",
+        "value": "1"
+      },
+      {
+        "apply_method": "pending-reboot",
+        "name": "log_statement",
+        "value": "mod"
+      },
+      {
+        "apply_method": "pending-reboot",
+        "name": "log_connections",
+        "value": "1"
+      },
+      {
+        "name": "pgaudit.role",
+        "value": "rds_pgaudit"
+      },
+      {
+        "apply_method": "pending-reboot",
+        "name": "shared_preload_libraries",
+        "value": "pgaudit, pg_stat_statements"
+      },
+      {
+        "name": "log_duration",
+        "value": "1"
+      },
+      {
+        "name": "log_error_verbosity",
+        "value": "verbose"
+      },
+      {
+        "name": "pgaudit.log",
+        "value": "All"
+      },
+      {
+        "name": "rds.log_retention_period",
+        "value": "1440"
+      }
+    ] 
+}
